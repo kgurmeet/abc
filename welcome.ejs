@@ -1,0 +1,241 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Admin</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            color: white;
+            padding-top: 30px;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            color: #007bff;
+        }
+        .table-container {
+            display: none; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-3 sidebar">
+               
+                <a href="#">Users</a>
+                <a href="#">Books</a>
+            </nav>
+
+           
+            <main class="col-md-9 content">
+                <h1 class="text-center">Welcome Admin</h1>
+                <div class="table-container" id="books-table"></div>
+                    <h3>Book List</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Book Title</th>
+                                <th>Author Name</th>
+                                <th>Publisher Name</th>
+                                <th>Price Per Unit</th>
+                                <th>Language</th>
+                                <th>Edition</th>
+                                <th>ISBN No</th>
+                                <th>Origin Country</th>
+                                <th>No of Pages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td colspan="9" class="text-center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </main>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        
+        document.getElementById('books-link').addEventListener('click', function() {
+            event.preventDefault(); 
+            document.getElementById('books-table').style.display = 'block';
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('books-table').style.display = 'none';
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Admin</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            color: white;
+            padding-top: 30px;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            color: #007bff;
+        }
+        .table-container {
+            display: none; /* Hide the table initially */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 sidebar">
+                <h4 class="text-center">Admin Panel</h4>
+                <a href="#" id="users-link">Users</a>
+                <a href="#" id="books-link">Books</a>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 content">
+                <h1>Welcome Admin</h1>
+                <p>This is the admin dashboard. Use the links on the left to manage Users and Books.</p>
+
+                <!-- Book Table Section -->
+                <div class="table-container" id="books-table">
+                    <h3>Book List</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Book Title</th>
+                                <th>Author Name</th>
+                                <th>Publisher Name</th>
+                                <th>Price Per Unit</th>
+                                <th>Language</th>
+                                <th>Edition</th>
+                                <th>ISBN No</th>
+                                <th>Origin Country</th>
+                                <th>No of Pages</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                            <!-- Empty rows for data (columns with no content) -->
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to show the table only when "Books" is clicked
+        document.getElementById('books-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default behavior of anchor link
+            // Show the books table when "Books" link is clicked
+            const booksTable = document.getElementById('books-table');
+            if (booksTable.style.display === 'none' || booksTable.style.display === '') {
+                booksTable.style.display = 'block';
+            } else {
+                booksTable.style.display = 'none'; // Toggle hide/show
+            }
+        });
+
+        // Initially hide the table on page load (safeguard)
+        window.onload = function() {
+            document.getElementById('books-table').style.display = 'none';
+        };
+    </script>
+</body>
+</html>
